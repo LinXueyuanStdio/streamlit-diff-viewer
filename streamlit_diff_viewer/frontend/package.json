@@ -1,5 +1,5 @@
 {
-  "name": "streamlit-diff-viewer",
+  "name": "streamlit_diff_viewer",
   "version": "1.0.0",
   "private": true,
   "scripts": {

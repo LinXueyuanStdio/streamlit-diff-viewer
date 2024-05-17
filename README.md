@@ -6,7 +6,7 @@ git-like diff viewer for streamlit webapp
 ## Installation
 
 ```bash
-pip install streamlit-diff-viewer
+pip install streamlit_diff_viewer
 ```
 
 ## Usage
