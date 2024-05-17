@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "st-diff-viewer"
-version = "1.0.0"
+version = "1.0.1"
 description = "A Streamlit component to display diff betoween two strings"
 authors = ["Xueyuan Lin <linxy59@mail2.sysu.eud.cn>"]
 readme = "README.md"
@@ -10,7 +10,7 @@ license = "MIT"
 
 # Only include the out directory of the frontend
 # The order of the include/exclude lists is important!
-include = ["st-diff-viewer/frontend/out/**"]
+include = ["st-diff-viewer/frontend/out/**", "docs/**"]
 exclude = ["st-diff-viewer/frontend/*"]
 
 [tool.poetry.dependencies]
