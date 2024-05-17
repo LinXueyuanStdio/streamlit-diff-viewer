@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/component/st-diff-viewer.st-diff-viewer",
+  basePath: "/component/st_diff_viewer.st_diff_viewer",
   reactStrictMode: true,
   swcMinify: true,
   images: {
