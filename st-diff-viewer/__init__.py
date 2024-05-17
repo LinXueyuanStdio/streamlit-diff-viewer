@@ -9,7 +9,7 @@ except ImportError:
     from typing_extensions import Literal
 
 _RELEASE = True
-COMPONENT_NAME = "streamlit_diff_viewer"
+COMPONENT_NAME = "st-diff-viewer"
 
 # use the build instead of development if release is true
 if _RELEASE:
@@ -18,7 +18,7 @@ if _RELEASE:
 
     _diff_viewer = components.declare_component(COMPONENT_NAME, path=build_dir)
 else:
-    _diff_viewer = components.declare_component(COMPONENT_NAME, url="http://localhost:35335/component/streamlit_diff_viewer.streamlit_diff_viewer")
+    _diff_viewer = components.declare_component(COMPONENT_NAME, url="http://localhost:35335/component/st-diff-viewer.st-diff-viewer")
 
 
 def diff_viewer(

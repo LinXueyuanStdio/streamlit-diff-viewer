@@ -3,7 +3,7 @@
 set -e
 
 # Build Frontend
-cd streamlit_diff_viewer/frontend || exit
+cd st-diff-viewer/frontend || exit
 yarn install
 yarn run build
 

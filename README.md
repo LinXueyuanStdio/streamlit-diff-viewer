@@ -6,13 +6,13 @@ git-like diff viewer for streamlit webapp
 ## Installation
 
 ```bash
-pip install streamlit_diff_viewer
+pip install st-diff-viewer
 ```
 
 ## Usage
 
 ```python
-from streamlit_diff_viewer import diff_viewer
+from st_diff_viewer import diff_viewer
 
 old_text = "a = 0"
 new_text = "a = 1"

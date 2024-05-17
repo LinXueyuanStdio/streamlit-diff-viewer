@@ -1,6 +1,6 @@
 import streamlit as st
 
-from streamlit_diff_viewer import diff_viewer
+from st_diff_viewer import diff_viewer
 
 old_text = """\
 const a = 10
