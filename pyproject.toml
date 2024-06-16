@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "st-diff-viewer"
-version = "1.0.4"
+version = "1.0.6"
 description = "A Streamlit component to display diff betoween two strings"
 authors = ["Xueyuan Lin <linxy59@mail2.sysu.eud.cn>"]
 readme = "README.md"
