@@ -32,6 +32,8 @@ def diff_viewer(
     extra_lines_surrounding_diff: Optional[int] = 3,
     hide_line_numbers: Optional[bool] = False,
     highlight_lines: Optional[List[str]] = [],
+    key=None,
+    **kwargs,
 ):
     """
     Creates a new instance of streamlit-diff-viewer component
@@ -72,4 +74,6 @@ def diff_viewer(
         extraLinesSurroundingDiff=extra_lines_surrounding_diff,
         hideLineNumbers=hide_line_numbers,
         highlightLines=highlight_lines,
+        key=key,
+        **kwargs,
     )
