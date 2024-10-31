@@ -23,6 +23,7 @@ function StreamlitDiffViewer() {
           extraLinesSurroundingDiff={args.extraLinesSurroundingDiff}
           hideLineNumbers={args.hideLineNumbers}
           highlightLines={args.highlightLines}
+          styles={args.styles}
         />
       </div>
     </ObserveSize>
