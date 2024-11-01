@@ -35,7 +35,25 @@ check1, check2, check3 = st.columns(3)
 split_view = check1.checkbox("Split View", True)
 use_dark_theme = check2.checkbox("Use Dark Theme", False)
 hide_line_numbers = check3.checkbox("Hide Line Numbers", False)
-
+default_style = """
+{
+  "line": {
+    "padding": "5px 0px",
+    "&:hover": {
+      "background": "#a26ea1",
+    },
+  },
+  "wordDiff": {
+    "display": "inline",
+    "padding": "0px",
+  }
+}
+"""
+styles = st.text_area("Styles (python code)", default_style)
+try:
+    styles = eval(styles)
+except Exception as e:
+    st.error(f"Error: {e}")
 col1, col2 = st.columns(2)
 extra_lines_surrounding_diff = col1.number_input("Extra Lines Surrounding Diff", 3)
 highlight_lines = col2.text_area("Highlight Lines", "").split("\n")
@@ -50,4 +68,5 @@ diff_viewer(
     extra_lines_surrounding_diff=extra_lines_surrounding_diff,
     hide_line_numbers=hide_line_numbers,
     highlight_lines=highlight_lines,
+    styles=styles,
 )

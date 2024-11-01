@@ -61,8 +61,26 @@ def diff_viewer(
         If `True` will hide line numbers, default is `False`.
     highlight_lines: List[str]
         The lines to be highlighted, default is an empty list.
+    key: str or None
+        An optional key that makes the component controlled, default is None.
+        key must be set to prevent the component from being rerendered on state changes.
     styles: dict
         The styles to be applied to the component, default is an empty dictionary.
+        for example:
+        ```python
+        {
+            "line": {
+                "padding": "5px 0px",
+                "&:hover": {
+                "background": "#a26ea1",
+                },
+            },
+            "wordDiff": {
+                "display": "inline",
+                "padding": "0px",
+            }
+        }
+        ```
 
     Returns: None
     """
