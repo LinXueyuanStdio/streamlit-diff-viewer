@@ -32,6 +32,7 @@ def diff_viewer(
     extra_lines_surrounding_diff: Optional[int] = 3,
     hide_line_numbers: Optional[bool] = False,
     highlight_lines: Optional[List[str]] = [],
+    styles: Optional[dict] = {},
     key=None,
     **kwargs,
 ):
@@ -60,6 +61,8 @@ def diff_viewer(
         If `True` will hide line numbers, default is `False`.
     highlight_lines: List[str]
         The lines to be highlighted, default is an empty list.
+    styles: dict
+        The styles to be applied to the component, default is an empty dictionary.
 
     Returns: None
     """
@@ -74,6 +77,7 @@ def diff_viewer(
         extraLinesSurroundingDiff=extra_lines_surrounding_diff,
         hideLineNumbers=hide_line_numbers,
         highlightLines=highlight_lines,
+        styles=styles,
         key=key,
         **kwargs,
     )
